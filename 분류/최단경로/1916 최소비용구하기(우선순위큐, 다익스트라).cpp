@@ -42,8 +42,7 @@ int main()
 
     int N, E;
     cin >> N >> E;
-    vector<vector<pair<int,int>>> costv(N+1, vector<pair<int,int>>());
-    map<pair<int,int>, int> m; // 이미 삽입되었는지 확인하기위한 map
+    vector<vector<pair<int,int>>> costv(N+1, vector<pair<int,int>>()); // pair<cost, to> 정렬을 위해 cost를 앞에뒀음.멩
     for (int i = 0; i < E; i++)
     {
         int from, to, cost;
